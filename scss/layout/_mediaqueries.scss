@@ -1,0 +1,136 @@
+/*mediaqueries*/
+
+@media only screen and ( max-width:1024px) {
+    .menu_navegacion{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+    
+        grid-template-rows: auto;
+        grid-template-areas:
+    'area1 area2 '
+    'area3 area4 '
+    'area6 area6 '
+    'area5 area10 '
+    'area7 area7 '
+    'area8 area9';
+    
+    }
+    .titulo{
+        color: #fdfdff; 
+        text-align: left;
+        -webkit-text-stroke: 1px red;
+        margin: 30px;
+        font-size: 25px;
+
+    }
+    .video iframe{
+        width: 65%;
+        height: 300px;
+        object-fit:cover ;
+        padding: 40px;
+    }
+    .video h3{
+        padding: 5px;
+        font-size: 25px;
+        text-align: center;
+        color: #ffffff;
+        -webkit-text-stroke: 1px red;
+    
+    }
+    .footer {
+        color: #000000;
+        font-size: 15px;
+        padding:   10px     ;
+        
+    }
+    .footer_body{
+        width: 50%;
+        padding: 10px;
+    
+    }
+    .footer_body textarea{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:768px )
+{
+    .formulario{
+        flex-direction: column;
+    }
+.Ingresa{
+    font-size: 20px;
+}
+    .formulario_body{
+width: 70%;
+
+    }
+    .menu_navegacion{
+        flex-direction: column;
+    }
+
+    .menu_navegacion ul{
+        flex-direction: column;
+    }
+    .menu_navegacion a {
+        font-size: 18px;
+    }
+
+
+
+    .galeria{
+        grid-template-columns: repeat(1, 1fr);
+    
+        grid-template-rows: auto;
+        grid-template-areas:
+    'area1 '
+    'area2'
+    'area3 '
+    'area4  '
+    'area5 '
+    'area6'
+    'area7 '
+    'area8'
+    'area9 '
+    'area10  ';
+    
+    }
+    .video iframe{
+        width: 65%;
+        height: 250px;
+        object-fit:cover ;
+        padding: 40px;
+    }
+    .video h3{
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+        -webkit-text-stroke: 1px red;
+    
+    }
+}
+@media only screen and (max-width:480px ){
+.Ingresa{
+    font-size: 18px;
+}
+.formulario_body h3 {
+    font-size: 20px;
+}
+    .formulario_body{
+        width: 90%;
+        height: 60%;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .galeria_hijo{
+        height: 400px;
+    }
+}

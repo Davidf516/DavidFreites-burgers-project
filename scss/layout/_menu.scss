@@ -1,0 +1,53 @@
+
+/*cards*/ 
+.cards{
+    padding:  50px    15px     ;
+}
+.cards_body img {
+    width: 100%;
+    height: 550px;
+    object-fit:cover ;
+}
+
+.cards_body{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    background-color: #a5aa94;
+    border: 7px solid rgb(184, 0, 0)  ;
+    margin: 10px;
+
+}
+
+.cards_body2 img {
+    width: 100px;
+    height: 100px;
+    object-fit:cover ;
+    padding: 15px;
+
+}
+.cards_body2{
+    display:inline-block;
+    width: 10%;
+    text-align: left;
+    background-color: #a5aa9400;
+    margin: 10px;
+
+}
+
+.cards_body h3, .cards_body2 h3 {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: 1px red;
+
+}
+.cards_body p ,.cards_body2 p{
+    font-size: 28px;
+    -webkit-text-stroke: 2px #000000;
+    color: #ff8c09;
+    background-color: #ffffff48;
+    padding: 15px;
+
+}
