@@ -1,40 +1,24 @@
 
-.menu_navegacion{
-    background-color:#ffffff ;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+/*menu_navegacion*/
 
-    a{
-        text-decoration: none;
-        color: #000000    ;
-        font-size: 25px;
-        text-transform: uppercase;
-        font-family:'Sigmar';
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px   ;
-
+.container-fluid{
         img{
             width: 50px;
             height: 50px;
             object-fit: cover;
             border-radius: 100%;
         }
-        
-        }
 
-    
-    ul{
-            list-style-type:none;
-            display: flex;
-            justify-content: flex-end;
-    
-        li  {
-            padding:10px;
-            
-            
-            }
-        }
+}
+.nav-item{
+    a{
+        text-decoration: none;
+        color: #000000    ;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family:'Sigmar';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px   ;}
 }

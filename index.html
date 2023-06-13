@@ -12,27 +12,41 @@
 </head>
 <body class="body" >
 <header> <!-- header = encabezado-->
-    <nav class="menu_navegacion">
-        <a href=""><img src="images/hamb.jpg" alt="">
-        </a>
-        <ul>
-            <li>
-                <a href="index.html">Inicio</a> 
-            </li>
-            <li>
-                <a href="pages/menu.html">Menu</a>
-            </li>
-            <li>
-                <a href="pages/galeria.html">Galeria</a>
-            </li>
-            <li>
-                <a href="pages/contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="pages/Promociones.html">Promociones</a> 
-            </li>
-        </ul>       
-    </nav> 
+    <nav class="navbar bg-body-tertiary navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/hamb.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navbar</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/Promociones.html">Promociones</a> 
+                </li>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     
 </header>
@@ -40,29 +54,46 @@
 
 <main><!--main = contenido principal de la pagina-->  
     <h1 class="titulo">Freites Burguers</h1><!-- soy el titulo unico--> 
-    
-    <section class="presentacion" ><!-- soy la 1 seccion--> 
-        <h2>    Quienes somos? </h2><!-- soy un titulo adicional-->
-        <div class="presentacion_body">
-            <p>En 2005, nuestra primera tienda abrió sus puertas en Orlando, Florida. Desde entonces, freites Burguers Store se ha convertido en un restaurante líder en la industria de servicios de alimentos, abriendo diez ubicaciones más en Pensilvania, Maryland, Delaware y Nueva Jersey.Freites Burguers Store es todo lo que necesita para anotar un gol en una operación exitosa de servicio de alimentos.</p><!-- soy un parrafo--> 
-        <!--  <a href="pages/menu.html#seccion1">Menu- Seccion1 </a>-->
-        </div>
-        <h2>Nuestra Vision</h2>
-        <div class="presentacion_body">
-            <p>Freites Burguers Store utiliza tecnología, poder adquisitivo y maravillosos empleados para brindar excelente hospitalidad, calidad y valor a nuestros clientes.</p><!-- soy un parrafo--> 
-        </div>
-        <h2>Nuestros Valores</h2>
-        <div  class="presentacion_body">            
-                <p>Respeto y Honestidad</p>
-                <p>Hospitalidad</p>
-                <p>Innovacion</p>
-                
-        </div>
-        <div> <h2>Que hacemos mejor</h2></div>
-    </section> <!-- fin de la 1 seccion--> 
+  
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Quienes somos?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p>En 2005, nuestra primera tienda abrió sus puertas en Orlando, Florida. Desde entonces, freites Burguers Store se ha convertido en un restaurante líder en la industria de servicios de alimentos, abriendo diez ubicaciones más en Pensilvania, Maryland, Delaware y Nueva Jersey.Freites Burguers Store es todo lo que necesita para anotar un gol en una operación exitosa de servicio de alimentos.</p>
 
-
-
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Nuestra Vision
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p>Freites Burguers Store utiliza tecnología, poder adquisitivo y maravillosos empleados para brindar excelente hospitalidad, calidad y valor a nuestros clientes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Nuestros Valores
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <p>Respeto y Honestidad</p>
+            <p>Hospitalidad</p>
+            <p>Innovacion</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <section id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -79,35 +110,30 @@
                 <h3>Larga Seleccion</h3>
                 <img src="images/almacen.webp" class="d-block w-100" alt="almacen">
                 <div class="carousel-caption d-none d-md-block">
-                <p>Compras de un enorme inventario de más de 394,000 productos en línea</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <h3>Precios irresistibles</h3>
                 <img src="images/money.jpg" class="d-block w-100" alt="money">
                 <div class="carousel-caption d-none d-md-block">
-                <p>Gracias a nuestro gran volumen de inventario, podemos pasar los ahorros a nuestros clientes a través de miles de descuentos.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <h3>Servicio de pickup</h3>
                 <img src="images/pickupdelivery_topper.png" class="d-block w-100" alt="pickup">
                 <div class="carousel-caption d-none d-md-block">
-                <p>Los miembros pueden aprovechar la comodidad de realizar pedidos en línea con la facilidad de recogerlos en la tienda. ¡Simplemente compre en línea y visítenos cuando su pedido esté listo!</p>
                 </div> 
             </div>
             <div class="carousel-item">
                 <h3>Website Sofisticado</h3>
                 <img src="images/web.png" class="d-block w-100" alt="web">
                 <div class="carousel-caption d-none d-md-block">
-                <p>Somos un sitio web innovador que sirve tanto como herramienta de investigación como de compra para los profesionales de la industria del servicio de alimentos.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <h3>Excelente atencion al cliente</h3>
                 <img src="images/atencion-al-cliente.jpg" class="d-block w-100" alt="cliente">
                 <div class="carousel-caption d-none d-md-block">
-                <p>Ya sea que se detenga en una de nuestras ubicaciones o compre en línea, puede estar seguro de que nuestro personal hará todo lo posible para brindarle una experiencia de primer nivel.</p>
                 </div>
             </div>
         

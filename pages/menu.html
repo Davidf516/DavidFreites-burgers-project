@@ -13,105 +13,140 @@
 <body class="body">
 
     <header> 
-        <nav class="menu_navegacion">
-            <a href=""><img src="../images/hamb.jpg" alt="">
-            </a>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a> 
-                </li>
-                <li>
-                    <a href="menu.html">Menu</a>
-                </li>
-                <li>
-                    <a href="galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="Promociones.html">Promociones</a> 
-                </li>
-            </ul> 
-        </nav>    
+        <nav class="navbar bg-body-tertiary navbar-expand-md">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../images/hamb.jpg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navbar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Promociones.html">Promociones</a> 
+                    </li>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
         
 
     <main>
         <h1 class="titulo1">MENU</h1>
         <h2 class="titulo">Hamburguesas</h2>
-        <section class="cards">
-            <div class="cards_body">
-                <h3>La con Queso</h3>
-                <img src="../images/burg1.jpg" alt="La con Queso"> 
-                <p>Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas
 
-                </p>
+        <div class="row row-cols-1 row-cols-md-3 g-6">
+            <div class="col">
+              <div class="card h-100">
+                <img src="../images/burg1.jpg" class="card-img-top" alt="La con Queso">
+                <div class="card-body">
+                  <h5 class="card-title">La con Queso</h5>
+                  <p class="card-text">Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas</p>
+                </div>
+              </div>
             </div>
-            <div class="cards_body">
-                <h3>La Crispy</h3>
-                <img src="../images/burg2.jpg" alt="La Crispy">
-                <p>Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas
-
-                </p>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="../images/burg2.jpg" alt="La Crispy" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">La Crispy</h5>
+                    <p class="card-text">Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../images/doble.jpg" class="card-img-top" alt="La con Queso Doble">
+                  <div class="card-body">
+                    <h5 class="card-title">La con Queso Doble</h5>
+                    <p class="card-text">Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../images/doble2.jpg" class="card-img-top" alt="La Doble pollo">
+                <div class="card-body">
+                  <h5 class="card-title">La Doble pollo</h5>
+                  <p class="card-text">Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas</p>
+                </div>
+              </div>
             </div>
-            <div class="cards_body">
-                <h3>La con Queso Doble</h3>
-
-                <img src="../images/doble.jpg" alt="La con Queso Doble">
-                <p>Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas
-
-                </p>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../images/para 3.jpg" class="card-img-top" alt="La Vegetariana">
+                <div class="card-body">
+                  <h5 class="card-title">La Vegetariana</h5>
+                  <p class="card-text">Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas</p>
+                </div>
+              </div>
             </div>
-            <div class="cards_body">
-                <h3>La Doble pollo</h3>
-
-                <img src="../images/doble2.jpg" alt="La Doble pollo"> 
-                <p>Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas
-
-                </p>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../images/2hamb.jpg" class="card-img-top" alt="La de la Casa">
+                <div class="card-body">
+                  <h5 class="card-title">La de la Casa</h5>
+                    <p class="card-text">Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas</p>
+                </div>
+              </div>
             </div>
-            <div class="cards_body">
-                <h3>La Vegetariana</h3>
-                <img src="../images/para 3.jpg" alt="La Vegetariana">
-                <p>Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas
-
-                </p>
-            </div>
-            <div class="cards_body">
-                <h3>La de la Casa</h3>
-
-                <img src="../images/2hamb.jpg" alt="La de la Casa">
-                <p>Una increible hamburguesa con queso, lechuga,pepinillo, tomate y cebolla acompanado de las mas deliciosas salsas
-
-                </p>
-            </div>
-
+          </div>
+       
         </section>
-
+        
+        <section>
             <h2 class="titulo">Sides</h2>
-        <section class="cards">
-            <div class="cards_body">
-                <h3>Nuggets</h3>
-                <img src="../images/nugguets.jpg" alt="Nuggets">
-                <p>Generosos trozos de pollo panizados y fritos mas crujientes que cualquiera
 
-                </p>
+            <div class="row row-cols-1 row-cols-md-3 g-6">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/nugguets.jpg" class="card-img-top" alt="Nuggets">
+                    <div class="card-body">
+                      <h5 class="card-title">Nuggets</h5>
+                      <p class="card-text">Generosos trozos de pollo panizados y fritos mas crujientes que cualquiera</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="../images/papas.jpg" alt="La Crispy" class="card-img-top" alt="Papas Fritas">
+                      <div class="card-body">
+                        <h5 class="card-title">Papas Fritas</h5>
+                        <p class="card-text">Deliciosos bastones de papas fritas sazonadas con el sabor de la casa </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="../images/Onion-Rings-Recipe-1.1jpg.jpg" class="card-img-top" alt="Aros de Cebolla">
+                      <div class="card-body">
+                        <h5 class="card-title">Aros de Cebolla</h5>
+                        <p class="card-text">Aros de cebolla sazonados que te dejaran queriendo mas!</p>
+                      </div>
+                    </div>
+                  </div>
             </div>
-            <div class="cards_body">
-                <h3>Papas Fritas</h3>
-                <img src="../images/papas.jpg" alt="Fries">
-                <p>Deliciosos bastones de papas fritas sazonadas con el sabor de la casa 
-
-                </p>
-            </div>
-            <div class="cards_body">
-                <h3>Aros de Cebolla</h3>
-                <img src="../images/Onion-Rings-Recipe-1.1jpg.jpg" alt="aros">
-                <p>Aros de cebolla sazonados que te dejaran queriendo mas!
-
-                </p>
-            </div> 
+     
         </section>
 
 
